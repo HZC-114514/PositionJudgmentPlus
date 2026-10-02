@@ -142,7 +142,7 @@
                 blocks: [
                     {
                         blockType: Scratch.BlockType.LABEL,
-                        text: "点判断"
+                        text: "点判断",
                     },
 
                     {
@@ -426,7 +426,7 @@
                     {
                         opcode:"SquareInSquare",
                         blockType:Scratch.BlockType.BOOLEAN,
-                        text: "[X1][Y1],[X2][Y2]的矩形是否与[X3][Y3],[X4][Y4],[IncludeBorder]的矩形重叠",
+                        text: "矩形[X1][Y1],[X2][Y2]是否与矩形[X3][Y3],[X4][Y4],[IncludeBorder]重叠",
                         arguments:{
                             X1: {
                                 type: Scratch.ArgumentType.NUMBER,
@@ -470,7 +470,7 @@
                     {
                         opcode:"CircleInSquare",
                         blockType:Scratch.BlockType.BOOLEAN,
-                        text: "半径为[Radius],[Rx][Ry]的圆是否与[X1][Y1],[X2][Y2],[IncludeBorder]的矩形重叠",
+                        text: "半径为[Radius],[Rx][Ry]的圆是否与矩形[X1][Y1],[X2][Y2],[IncludeBorder]重叠",
                         arguments:{
                             Radius: {
                                 type: Scratch.ArgumentType.NUMBER,
@@ -510,7 +510,7 @@
                     {
                         opcode:"CircleInCircle",
                         blockType:Scratch.BlockType.BOOLEAN,
-                        text: "半径为[R1],[Rx1][Ry1]的圆是否与[R2],[Rx2][Ry2],[IncludeBorder]的圆重叠",
+                        text: "半径为[R1],[Rx1][Ry1]的圆是否与半径为[R2],[Rx2][Ry2],[IncludeBorder]的圆重叠",
                         arguments:{
                             R1: {
                                 type: Scratch.ArgumentType.NUMBER,
@@ -723,11 +723,11 @@
                         items:[
                             {
                                 text: "包含边界",
-                                value: true
+                                value: "true"
                             },
                             {
                                 text: "不包含边界",
-                                value: false
+                                value: "false"
                             }
                         ]
                     },
